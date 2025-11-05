@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Adoption Form</title>
+    <link rel="stylesheet" href="./styles/Style.css">
+</head>
+<body>
+    <form action="./pages/done.html">
+        <h1>Register in order to adopt a pet</h1>
+
+        <div class="container1">    
+            <h2>Personal Information</h2>
+
+            <div class="groups">
+                <label>Name *</label>
+                <div class="class2">
+                    <input type="text" placeholder="First Name" pattern="[A-Za-z]" required>
+                    <input type="text" placeholder="Last Name" pattern="[A-Za-z]" required>
+                </div>
+            </div>
+
+            <div class="groups">
+                <label>Mobile No. *</label>
+                <input type="text" placeholder="+45" maxlength="12" minlength="8" required>
+                <div class="comment">Phone number must be in the format +45 12345678</div>
+            </div>
+
+            <div class="groups">
+                <label>Email *</label>
+                <input type="email" required>
+                <div class="comment">email address must be in the format petshop@gmail.com</div>
+            </div>
+
+            <div class="groups">
+                <label for="visitDate">Date Of Birth *</label>
+                <input id="visitDate" name="visitDate" type="date" required/>
+            </div>
+
+            <div class="groups">
+                <label>Gender *</label>
+                <div class="optioninputs">
+                    <label><input type="radio" name="gender" required> Male</label>
+                    <label><input type="radio" name="gender" required> Female</label>
+                </div>
+            </div>
+
+            <div class="groups">
+                <label>Your Photo</label>
+                <input type="file">
+            </div>
+            <div class="groups">
+                <label>City</label>
+                <input type="text">
+            </div>
+
+            <div class="groups">
+                <label>Address</label>
+                <textarea rows="3"></textarea>
+            </div>
+        </div>
+        <div class="container2">
+            <h2>Adoption Information</h2>
+
+            <div class="groups">
+                <label>Have you owned pets before?</label>
+                <div class="optioninputs">
+                    <label><input type="radio" name="pet"> yes</label>
+                    <label><input type="radio" name="pet"> no</label>
+                </div>
+            </div>
+
+            <div class="groups">
+                <label>Numbers of pets currently owned</label>
+                <input type="number" placeholder="number" min="0" max="100">
+            </div>
+
+            <div class="groups">
+                <label>Type of pet you wish to have</label>
+                <select>
+                    <option value="">Select One</option>
+                    <option>Dog</option>
+                    <option>Cat</option>
+                    <option>Fish</option>
+                </select>
+            </div>
+
+            <div class="groups">
+                <label>Preferred Gender</label>
+                <div class="optioninputs">
+                    <label><input type="radio" name="Preferredgender"> Male</label>
+                    <label><input type="radio" name="Preferredgender"> Female</label>
+                    <label><input type="radio" name="Preferredgender"> No Preference</label>
+                </div>
+            </div>
+
+            <div class="groups">
+                <label>Your daily activity (1-10)
+                </label>
+                <input id="activity" name="activity" type="range" min="0" max="10" value="5"
+                aria-valuemin="0" aria-valuemax="10" aria-valuenow="5" >
+            </div>
+
+            <div class="groups">
+                <label for="reason">Why do you want to adopt? <span aria-hidden="true">*</span></label>
+                    <textarea id="reason" name="reason" rows="4" maxlength="500"
+                    placeholder="Please explain your motivation and plan for adoption."></textarea>
+            </div>
+
+            <div class="groups">
+                <label for="photo">Upload Home Photo (optional)</label>
+                <input id="photo" name="photo" type="file" accept="image/*" />
+            </div>
+        </div>
+            <button type="submit"> Register</button>
+    </form>
+    
+</body>
+</html>

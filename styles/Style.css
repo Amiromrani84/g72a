@@ -7,7 +7,7 @@
 
 body {
     display: grid;
-    background-image: url('./images/galaxy.png');
+    background-image: url('../images/galaxy.png');
 }
 
 form {
@@ -218,4 +218,5 @@ button:hover {
   .container1, .container2 {
     max-width: 80%;
   }
+
 }
